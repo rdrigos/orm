@@ -1,0 +1,11 @@
+# Compiled output
+dist
+node_modules
+
+# IDEs and editors
+.idea/*
+.idx/*
+.vscode/*
+
+# Development
+playground.*
