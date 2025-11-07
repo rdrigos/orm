@@ -22,6 +22,7 @@ export default defineConfig(
     },
     rules: {
       'prettier/prettier': 'error',
+      '@typescript-eslint/no-unsafe-function-type': 'off',
     },
   }
 );
