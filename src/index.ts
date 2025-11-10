@@ -1,1 +1,3 @@
-console.log({ package: 'orm' });
+import 'reflect-metadata';
+
+export * from '@/core';
