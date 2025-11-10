@@ -8,22 +8,23 @@ export interface EntityOptions {
   name?: string;
 
   /**
-   * Schema name
-   * Used in Postgres and Sql Server
-   */
-  schema?: string;
-
-  /**
    * Table comment.
    * Not supported by all database types
    */
   comment?: string;
+
+  /**
+   * Schema name
+   * Used in Postgres and Sql Server
+   */
+  schema?: string;
 }
 
 export interface EntityMetadata {
   target: Function;
   name: string;
   comment: string | undefined;
+  schema: string | undefined;
 }
 
 export function Entity(options: EntityOptions = {}): ClassDecorator {
